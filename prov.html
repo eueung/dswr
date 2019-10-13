@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147208165-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-147208165-1');
+  </script>
+  <title>Olah Data Publik Anggota DPR RI 2019</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <style>
+    .bd-placeholder-img {
+        font-size: 1.925rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+    }
+      
+    .jumbotron {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      margin-bottom: 0;
+      background-color: #fff;
+    }
+    @media (min-width: 768px) {
+      .jumbotron {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+    }
+
+    .jumbotron p:last-child {
+      margin-bottom: 0;
+    }
+
+    .jumbotron-heading {
+      font-weight: 300;
+    }
+
+    .jumbotron .container {
+      max-width: 40rem;
+    }
+
+    footer {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    footer p {
+      margin-bottom: .25rem;
+    }      
+    .btn-sm { margin-bottom: .25rem !important; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="navbar navbar-light bg-light shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <i class="fa fa-cog fa-spin fa-fw"></i>
+        <strong>DSWR</strong>
+      </a>
+    </div>
+  </div>
+</header>
+
+    
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+        <p><small class="text-muted">Last updated: <strong>13-10-2019 12:53</strong></small></p>
+
+        <h4 class="jumbotron-heading">Data Science Wakil Rakyat</h4>
+        <h2><strong>Highlight Data ALeg Provinsi</strong></h2>
+
+        <h3 class="jumbotron-heading"><span class="bg-warning">575</span> ALeg | <span class="bg-warning">570</span> Seed Data Points</h3>
+      <p class="lead text-muted">
+          <strong>Visualisasi</strong> dan Olah <strong>Data</strong> Terbuka Anggota DPR RI 2019. </p>
+      <p><small class="text-muted">
+          Data tidak / kurang akurat? Bantu kami meningkatkan kualitas data dengan <a href="http://bit.ly/dswr2019">mengisi form</a> ini.
+      </small></p>
+      <p>
+        <a href="index.html" class="btn btn-outline-primary btn-sm">Home</a>
+        <a href="prov.html" class="btn btn-outline-primary btn-sm">Provinsi</a>
+        <a href="partai.html" class="btn btn-outline-primary btn-sm">Partai</a>
+        <a href="top5p.html" class="btn btn-outline-primary btn-sm">Top 5%</a>
+        <a href="https://github.com/eueung/dswr" class="btn btn-outline-primary btn-sm">GitHub</a>
+        
+        <a class="btn btn-outline-primary btn-sm">Umur</a>
+        <a class="btn btn-outline-primary btn-sm">Gender</a>
+        <a class="btn btn-outline-primary btn-sm">Survey</a>
+      </p>
+    </div>
+  </section>
+
+    
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+
+<div class="col-md-12 text-center">
+  <img src="images/prov_map_13-10-19_12-53.png" class="img-fluid" alt="...">
+</div>
+
+<div class="col-md-6">           
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Data ALeg Provinsi</div>
+
+  <div class="card-body">
+    <table class="table table-sm table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Provinsi</th>
+          <th scope="col">ALeg</th>
+          <th scope="col">Jumlah Harta</th>
+          <th scope="col">Mean</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        
+            <tr>
+              <th scope="row">1</th>
+              <td>Bali</td>
+              <td>9</td>
+              <td>120.9</td>
+              <td>13.4</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">2</th>
+              <td>Bangka Belitung</td>
+              <td>3</td>
+              <td>106.9</td>
+              <td>35.6</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">3</th>
+              <td>Banten</td>
+              <td>22</td>
+              <td>742.4</td>
+              <td>33.7</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">4</th>
+              <td>Bengkulu</td>
+              <td>4</td>
+              <td>41.3</td>
+              <td>10.3</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">5</th>
+              <td>DI Yogyakarta</td>
+              <td>8</td>
+              <td>122.5</td>
+              <td>15.3</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">6</th>
+              <td>DKI Jakarta</td>
+              <td>21</td>
+              <td>1110.9</td>
+              <td>52.9</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">7</th>
+              <td>Gorontalo</td>
+              <td>3</td>
+              <td>501.6</td>
+              <td>167.2</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">8</th>
+              <td>Jambi</td>
+              <td>8</td>
+              <td>117.0</td>
+              <td>14.6</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">9</th>
+              <td>Jawa Barat</td>
+              <td>90</td>
+              <td>1796.9</td>
+              <td>20.0</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">10</th>
+              <td>Jawa Tengah</td>
+              <td>76</td>
+              <td>1558.4</td>
+              <td>20.5</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">11</th>
+              <td>Jawa Timur</td>
+              <td>87</td>
+              <td>1679.2</td>
+              <td>19.3</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">12</th>
+              <td>Kalimantan Barat</td>
+              <td>12</td>
+              <td>145.9</td>
+              <td>12.2</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">13</th>
+              <td>Kalimantan Selatan</td>
+              <td>10</td>
+              <td>257.5</td>
+              <td>25.7</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">14</th>
+              <td>Kalimantan Tengah</td>
+              <td>6</td>
+              <td>78.6</td>
+              <td>13.1</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">15</th>
+              <td>Kalimantan Timur</td>
+              <td>8</td>
+              <td>336.5</td>
+              <td>42.1</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">16</th>
+              <td>Kalimantan Utara</td>
+              <td>3</td>
+              <td>14.0</td>
+              <td>4.7</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">17</th>
+              <td>Kepulauan Riau</td>
+              <td>4</td>
+              <td>38.0</td>
+              <td>9.5</td>
+            </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </tbody>
+    </table>
+  </div>
+  
+</div>
+</div> 
+
+<div class="col-md-6">           
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Data ALeg Provinsi</div>
+
+  <div class="card-body">
+    <table class="table table-sm table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Provinsi</th>
+          <th scope="col">ALeg</th>
+          <th scope="col">Jumlah Harta</th>
+          <th scope="col">Mean</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <tr>
+              <th scope="row">18</th>
+              <td>Lampung</td>
+              <td>20</td>
+              <td>453.7</td>
+              <td>22.7</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">19</th>
+              <td>Maluku</td>
+              <td>4</td>
+              <td>22.1</td>
+              <td>5.5</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">20</th>
+              <td>Maluku Utara</td>
+              <td>3</td>
+              <td>18.5</td>
+              <td>6.2</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">21</th>
+              <td>Nanggroe Aceh Darussalam</td>
+              <td>13</td>
+              <td>153.0</td>
+              <td>11.8</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">22</th>
+              <td>Nusa Tenggara Barat</td>
+              <td>11</td>
+              <td>172.1</td>
+              <td>15.6</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">23</th>
+              <td>Nusa Tenggara Timur</td>
+              <td>13</td>
+              <td>696.3</td>
+              <td>53.6</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">24</th>
+              <td>Papua</td>
+              <td>9</td>
+              <td>91.5</td>
+              <td>10.2</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">25</th>
+              <td>Papua Barat</td>
+              <td>3</td>
+              <td>73.6</td>
+              <td>24.5</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">26</th>
+              <td>Riau</td>
+              <td>13</td>
+              <td>375.7</td>
+              <td>28.9</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">27</th>
+              <td>Sulawesi Barat</td>
+              <td>4</td>
+              <td>36.1</td>
+              <td>9.0</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">28</th>
+              <td>Sulawesi Selatan</td>
+              <td>29</td>
+              <td>571.5</td>
+              <td>19.7</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">29</th>
+              <td>Sulawesi Tengah</td>
+              <td>6</td>
+              <td>210.1</td>
+              <td>35.0</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">30</th>
+              <td>Sulawesi Tenggara</td>
+              <td>7</td>
+              <td>65.8</td>
+              <td>9.4</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">31</th>
+              <td>Sulawesi Utara</td>
+              <td>6</td>
+              <td>101.2</td>
+              <td>16.9</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">32</th>
+              <td>Sumatera Barat</td>
+              <td>14</td>
+              <td>213.8</td>
+              <td>15.3</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">33</th>
+              <td>Sumatera Selatan</td>
+              <td>11</td>
+              <td>132.0</td>
+              <td>12.0</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">34</th>
+              <td>Sumatera Utara</td>
+              <td>30</td>
+              <td>874.5</td>
+              <td>29.1</td>
+            </tr>
+        
+        
+        
+    </tbody>
+    </table>
+  </div>
+  
+</div>
+</div> 
+
+<div class="col-md-6">           
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Jumlah Kekayaan ALeg (Provinsi)</div>
+  <img src="images/prov_sum_13-10-19_12-53.svg" class="card-img-top" alt="...">
+</div>
+</div>        
+
+<div class="col-md-6">           
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Kekayaan Rata-Rata</div>
+  <img src="images/prov_mean_13-10-19_12-53.svg" class="card-img-top" alt="...">
+</div>
+</div>        
+
+<div class="col-md-12 text-center">
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Sebaran Kekayaan ALeg (Provinsi)</div>
+  <img src="images/prov_box_13-10-19_12-53.svg" class="img-fluid" alt="...">
+</div>
+</div>
+       
+<div class="col-md-6">           
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Peringkat 1 Tiap Provinsi</div>
+
+  <div class="card-body">
+    <table class="table table-sm table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Provinsi</th>
+          <th scope="col">Partai</th>
+          <th scope="col">ALeg</th>
+          <th scope="col">Jumlah Harta</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        
+            <tr>
+              <th scope="row">1</th>
+              <td>Bali</td>
+              <td>Golkar</td>
+              <td>GDE SUMARJAYA LINGGIH</td>
+              <td>49.6</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">2</th>
+              <td>Bangka Belitung</td>
+              <td>PDIP</td>
+              <td>RUDIANTO TJEN</td>
+              <td>59.6</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">3</th>
+              <td>Banten</td>
+              <td>Golkar</td>
+              <td>ANDI ACHMAD DARA</td>
+              <td>484.4</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">4</th>
+              <td>Bengkulu</td>
+              <td>PAN</td>
+              <td>DEWI CORYATI</td>
+              <td>19.0</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">5</th>
+              <td>DI Yogyakarta</td>
+              <td>PKB</td>
+              <td>SUKAMTO</td>
+              <td>50.0</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">6</th>
+              <td>DKI Jakarta</td>
+              <td>PDIP</td>
+              <td>ERIKO SOTARDUGA B.P.S</td>
+              <td>249.8</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">7</th>
+              <td>Gorontalo</td>
+              <td>NasDem</td>
+              <td>RACHMAD GOBEL</td>
+              <td>419.0</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">8</th>
+              <td>Jambi</td>
+              <td>PAN</td>
+              <td>A. BAKRI H.M.</td>
+              <td>29.4</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">9</th>
+              <td>Jawa Barat</td>
+              <td>PAN</td>
+              <td>EDDY SOEPARNO</td>
+              <td>265.6</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">10</th>
+              <td>Jawa Tengah</td>
+              <td>PDIP</td>
+              <td>PUAN MAHARANI</td>
+              <td>363.8</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">11</th>
+              <td>Jawa Timur</td>
+              <td>Golkar</td>
+              <td>HAENY RELAWATI R.W.</td>
+              <td>331.8</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">12</th>
+              <td>Kalimantan Barat</td>
+              <td>PKB</td>
+              <td>DANIEL JOHAN</td>
+              <td>52.0</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">13</th>
+              <td>Kalimantan Selatan</td>
+              <td>Golkar</td>
+              <td>HASNURYADI SULAIMAN</td>
+              <td>82.0</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">14</th>
+              <td>Kalimantan Tengah</td>
+              <td>PDIP</td>
+              <td>WILLY MIDEL YOSEPH</td>
+              <td>33.2</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">15</th>
+              <td>Kalimantan Timur</td>
+              <td>Golkar</td>
+              <td>RUDY MAS'UD</td>
+              <td>260.6</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">16</th>
+              <td>Kalimantan Utara</td>
+              <td>PDIP</td>
+              <td>DEDDY YEVRI HANTERU SITORUS</td>
+              <td>7.7</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">17</th>
+              <td>Kepulauan Riau</td>
+              <td>PAN</td>
+              <td>ASMAN ABNUR</td>
+              <td>25.7</td>
+            </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </tbody>
+    </table>
+  </div>
+  
+</div>
+</div> 
+
+<div class="col-md-6">           
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Peringkat 1 Tiap Provinsi</div>
+
+  <div class="card-body">
+    <table class="table table-sm table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Provinsi</th>
+          <th scope="col">Partai</th>
+          <th scope="col">ALeg</th>
+          <th scope="col">Jumlah Harta</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <tr>
+              <th scope="row">18</th>
+              <td>Lampung</td>
+              <td>PKB</td>
+              <td>MUHAMMAD KHADAFI</td>
+              <td>123.7</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">19</th>
+              <td>Maluku</td>
+              <td>NasDem</td>
+              <td>ABDULLAH TUASIKAL</td>
+              <td>16.4</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">20</th>
+              <td>Maluku Utara</td>
+              <td>NasDem</td>
+              <td>ACHMAD HATARI</td>
+              <td>12.8</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">21</th>
+              <td>Nanggroe Aceh Darussalam</td>
+              <td>PKB</td>
+              <td>RUSLAN M. DAUD</td>
+              <td>28.4</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">22</th>
+              <td>Nusa Tenggara Barat</td>
+              <td>Golkar</td>
+              <td>SARI YULIATI</td>
+              <td>59.7</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">23</th>
+              <td>Nusa Tenggara Timur</td>
+              <td>PDIP</td>
+              <td>HERMAN HERY</td>
+              <td>418.1</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">24</th>
+              <td>Papua</td>
+              <td>Golkar</td>
+              <td>TRIFENA M. TINAL</td>
+              <td>41.6</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">25</th>
+              <td>Papua Barat</td>
+              <td>Golkar</td>
+              <td>ROBERT JOPPY KARDINAL SAB</td>
+              <td>40.4</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">26</th>
+              <td>Riau</td>
+              <td>Golkar</td>
+              <td>ARSYAD JULIANDI RACHMAN</td>
+              <td>140.5</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">27</th>
+              <td>Sulawesi Barat</td>
+              <td>Demokrat</td>
+              <td>SUHARDI DUKA</td>
+              <td>14.9</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">28</th>
+              <td>Sulawesi Selatan</td>
+              <td>Gerindra</td>
+              <td>LA TINRO LA TUNRUNG</td>
+              <td>140.0</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">29</th>
+              <td>Sulawesi Tengah</td>
+              <td>Golkar</td>
+              <td>MUHIDIN MOHAMAD SAID</td>
+              <td>111.8</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">30</th>
+              <td>Sulawesi Tenggara</td>
+              <td>Golkar</td>
+              <td>RIDWAN BAE</td>
+              <td>22.1</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">31</th>
+              <td>Sulawesi Utara</td>
+              <td>NasDem</td>
+              <td>FELLY ESTELITA RUNTUWENE</td>
+              <td>82.7</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">32</th>
+              <td>Sumatera Barat</td>
+              <td>Demokrat</td>
+              <td>MULYADI</td>
+              <td>42.7</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">33</th>
+              <td>Sumatera Selatan</td>
+              <td>Golkar</td>
+              <td>ALEX NOERDIN</td>
+              <td>28.6</td>
+            </tr>
+        
+        
+        
+            <tr>
+              <th scope="row">34</th>
+              <td>Sumatera Utara</td>
+              <td>PDIP</td>
+              <td>SIHAR P.H. SITORUS</td>
+              <td>380.2</td>
+            </tr>
+        
+        
+        
+    </tbody>
+    </table>
+  </div>
+  
+</div>
+</div> 
+
+</div></div></div>
+
+</main>
+
+    
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p><strong>DSWR</strong> merupakan project (pembelajaran) data science dengan menggunakan informasi publik tentang Anggota Legislatif (ALeg) / DPR RI 2019. Data yg digunakan dalam DSWR berasal dari beberapa sumber: situs resmi <a href="http://www.dpr.go.id/anggota">ALeg</a> DPR RI dan situs resmi <a href="https://elhkpn.kpk.go.id"> e-Announcement LHKPN</a>. Laporan Harta Kekayaan Penyelenggara Negara (LHKPN) adalah daftar seluruh harta kekayaan Penyelenggara Negara yang dituangkan di dalam formulir LHKPN yang ditetapkan oleh Komisi Pemberantasan Korupsi (KPK). Lebih lanjut tentang LHKPN dapat dibaca <a href="https://id.wikipedia.org/wiki/Laporan_Harta_Kekayaan_Penyelenggara_Negara">disini</a>.
+</p>
+    <p>Walaupun data yg digunakan (akan diupayakan) sesuai dengan data resmi tersebut di atas, DSWR tidak memberikan jaminan apapun tentang validitas data. Silahkan untuk selalu di-cross-check dengan data resmi di situs DPR RI dan e-LHKPN.</p>
+    <p><small><strong>2019</strong> | <strong>EM</strong> (eueung-at-stei.itb.ac.id)</small></p>  
+  </div>
+</footer>
+
+</body></html>

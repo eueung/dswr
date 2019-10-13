@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147208165-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-147208165-1');
+  </script>
+  <title>Olah Data Publik Anggota DPR RI 2019</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <style>
+    .bd-placeholder-img {
+        font-size: 1.925rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+    }
+      
+    .jumbotron {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      margin-bottom: 0;
+      background-color: #fff;
+    }
+    @media (min-width: 768px) {
+      .jumbotron {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+    }
+
+    .jumbotron p:last-child {
+      margin-bottom: 0;
+    }
+
+    .jumbotron-heading {
+      font-weight: 300;
+    }
+
+    .jumbotron .container {
+      max-width: 40rem;
+    }
+
+    footer {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    footer p {
+      margin-bottom: .25rem;
+    }      
+    .btn-sm { margin-bottom: .25rem !important; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="navbar navbar-light bg-light shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <i class="fa fa-cog fa-spin fa-fw"></i>
+        <strong>DSWR</strong>
+      </a>
+    </div>
+  </div>
+</header>
+
+    
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+        <p><small class="text-muted">Last updated: <strong>13-10-2019 12:53</strong></small></p>
+
+        <h4 class="jumbotron-heading">Data Science Wakil Rakyat</h4>
+        <h2><strong>Highlight Data ALeg Partai</strong></h2>
+
+        <h3 class="jumbotron-heading"><span class="bg-warning">575</span> ALeg | <span class="bg-warning">570</span> Seed Data Points</h3>
+      <p class="lead text-muted">
+          <strong>Visualisasi</strong> dan Olah <strong>Data</strong> Terbuka Anggota DPR RI 2019. </p>
+      <p><small class="text-muted">
+          Data tidak / kurang akurat? Bantu kami meningkatkan kualitas data dengan <a href="http://bit.ly/dswr2019">mengisi form</a> ini.
+      </small></p>
+      <p>
+        <a href="index.html" class="btn btn-outline-primary btn-sm">Home</a>
+        <a href="prov.html" class="btn btn-outline-primary btn-sm">Provinsi</a>
+        <a href="partai.html" class="btn btn-outline-primary btn-sm">Partai</a>
+        <a href="top5p.html" class="btn btn-outline-primary btn-sm">Top 5%</a>
+        <a href="https://github.com/eueung/dswr" class="btn btn-outline-primary btn-sm">GitHub</a>
+        
+        <a class="btn btn-outline-primary btn-sm">Umur</a>
+        <a class="btn btn-outline-primary btn-sm">Gender</a>
+        <a class="btn btn-outline-primary btn-sm">Survey</a>
+      </p>
+    </div>
+  </section>
+
+    
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+
+<div class="col-md-12 text-center">
+  <img src="images/partai_map_13-10-19_12-53.png" class="img-fluid" alt="...">
+</div>
+
+<div class="col-md-6">           
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Data ALeg Partai</div>
+
+  <div class="card-body">
+    <table class="table table-sm table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Partai</th>
+          <th scope="col">ALeg</th>
+          <th scope="col">Jumlah Harta</th>
+          <th scope="col">Mean</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+              <th scope="row">1</th>
+              <td>Demokrat</td>
+              <td>54</td>
+              <td>749.4</td>
+              <td>13.9</td>
+            </tr>
+        
+        <tr>
+              <th scope="row">2</th>
+              <td>Gerindra</td>
+              <td>74</td>
+              <td>1349.9</td>
+              <td>18.2</td>
+            </tr>
+        
+        <tr>
+              <th scope="row">3</th>
+              <td>Golkar</td>
+              <td>85</td>
+              <td>3180.5</td>
+              <td>37.4</td>
+            </tr>
+        
+        <tr>
+              <th scope="row">4</th>
+              <td>NasDem</td>
+              <td>58</td>
+              <td>1732.5</td>
+              <td>29.9</td>
+            </tr>
+        
+        <tr>
+              <th scope="row">5</th>
+              <td>PAN</td>
+              <td>44</td>
+              <td>1132.0</td>
+              <td>25.7</td>
+            </tr>
+        
+        <tr>
+              <th scope="row">6</th>
+              <td>PDIP</td>
+              <td>128</td>
+              <td>3497.5</td>
+              <td>27.3</td>
+            </tr>
+        
+        <tr>
+              <th scope="row">7</th>
+              <td>PKB</td>
+              <td>58</td>
+              <td>712.4</td>
+              <td>12.3</td>
+            </tr>
+        
+        <tr>
+              <th scope="row">8</th>
+              <td>PKS</td>
+              <td>50</td>
+              <td>447.5</td>
+              <td>9.0</td>
+            </tr>
+        
+        <tr>
+              <th scope="row">9</th>
+              <td>PPP</td>
+              <td>19</td>
+              <td>228.2</td>
+              <td>12.0</td>
+            </tr>
+        
+        
+    </tbody>
+    </table>
+  </div>
+  
+</div>
+</div> 
+
+<div class="col-md-6">           
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Peringkat 1 Tiap Partai</div>
+
+  <div class="card-body">
+    <table class="table table-sm table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Provinsi</th>
+          <th scope="col">Partai</th>
+          <th scope="col">ALeg</th>
+          <th scope="col">Jumlah Harta</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+              <th scope="row">1</th>
+              <td>Jawa Barat</td>
+              <td>Demokrat</td>
+              <td>DIDI IRAWADI SYAMSUDIN. LL.M</td>
+              <td>59.8</td>
+            </tr>
+        
+        <tr>
+              <th scope="row">2</th>
+              <td>Sulawesi Selatan</td>
+              <td>Gerindra</td>
+              <td>LA TINRO LA TUNRUNG</td>
+              <td>140.0</td>
+            </tr>
+        
+        <tr>
+              <th scope="row">3</th>
+              <td>Banten</td>
+              <td>Golkar</td>
+              <td>ANDI ACHMAD DARA</td>
+              <td>484.4</td>
+            </tr>
+        
+        <tr>
+              <th scope="row">4</th>
+              <td>Gorontalo</td>
+              <td>NasDem</td>
+              <td>RACHMAD GOBEL</td>
+              <td>419.0</td>
+            </tr>
+        
+        <tr>
+              <th scope="row">5</th>
+              <td>Jawa Barat</td>
+              <td>PAN</td>
+              <td>EDDY SOEPARNO</td>
+              <td>265.6</td>
+            </tr>
+        
+        <tr>
+              <th scope="row">6</th>
+              <td>Nusa Tenggara Timur</td>
+              <td>PDIP</td>
+              <td>HERMAN HERY</td>
+              <td>418.1</td>
+            </tr>
+        
+        <tr>
+              <th scope="row">7</th>
+              <td>Lampung</td>
+              <td>PKB</td>
+              <td>MUHAMMAD KHADAFI</td>
+              <td>123.7</td>
+            </tr>
+        
+        <tr>
+              <th scope="row">8</th>
+              <td>Jawa Barat</td>
+              <td>PKS</td>
+              <td>FAHMI ALAYDROES</td>
+              <td>64.7</td>
+            </tr>
+        
+        <tr>
+              <th scope="row">9</th>
+              <td>Jawa Barat</td>
+              <td>PPP</td>
+              <td>NURHAYATI</td>
+              <td>59.7</td>
+            </tr>
+        
+        
+    </tbody>
+    </table>
+  </div>
+  
+</div>
+</div> 
+
+<div class="col-md-6">           
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Jumlah Kekayaan ALeg (Provinsi)</div>
+  <img src="images/partai_sum_13-10-19_12-53.svg" class="card-img-top" alt="...">
+</div>
+</div>        
+
+<div class="col-md-6">           
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Kekayaan Rata-Rata</div>
+  <img src="images/partai_mean_13-10-19_12-53.svg" class="card-img-top" alt="...">
+</div>
+</div>        
+
+<div class="col-md-12 text-center">
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Sebaran Kekayaan ALeg (Partai)</div>
+  <img src="images/partai_box_13-10-19_12-53.svg" class="img-fluid" alt="...">
+</div>
+</div>
+       
+
+</div></div></div>
+
+</main>
+
+    
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p><strong>DSWR</strong> merupakan project (pembelajaran) data science dengan menggunakan informasi publik tentang Anggota Legislatif (ALeg) / DPR RI 2019. Data yg digunakan dalam DSWR berasal dari beberapa sumber: situs resmi <a href="http://www.dpr.go.id/anggota">ALeg</a> DPR RI dan situs resmi <a href="https://elhkpn.kpk.go.id"> e-Announcement LHKPN</a>. Laporan Harta Kekayaan Penyelenggara Negara (LHKPN) adalah daftar seluruh harta kekayaan Penyelenggara Negara yang dituangkan di dalam formulir LHKPN yang ditetapkan oleh Komisi Pemberantasan Korupsi (KPK). Lebih lanjut tentang LHKPN dapat dibaca <a href="https://id.wikipedia.org/wiki/Laporan_Harta_Kekayaan_Penyelenggara_Negara">disini</a>.
+</p>
+    <p>Walaupun data yg digunakan (akan diupayakan) sesuai dengan data resmi tersebut di atas, DSWR tidak memberikan jaminan apapun tentang validitas data. Silahkan untuk selalu di-cross-check dengan data resmi di situs DPR RI dan e-LHKPN.</p>
+    <p><small><strong>2019</strong> | <strong>EM</strong> (eueung-at-stei.itb.ac.id)</small></p>  
+  </div>
+</footer>
+
+</body></html>
